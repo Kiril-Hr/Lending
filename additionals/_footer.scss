@@ -1,0 +1,137 @@
+.contact-us-block-and-contacts {
+    width: fit-content;
+    height: fit-content;
+    background: #316099;
+    border-radius: 0px 200px 0px 0px;
+    padding: 6.67% 14.45% 4.7% 0;
+    margin-right: 7.03%;
+    .contact-us-block {
+        @include flex(space-between, unset);
+        margin-left: 18.23%;
+        padding-bottom: 8.22%;
+        h3 {
+            font-family: $font-gilroy;
+            font-size: 36px;
+            line-height: 46px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            margin-bottom: 5.9%;
+            width: 58%;
+            height: 45%;
+        }
+        p {
+            font-family: $font-gilroy;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            color: rgb(255, 255, 255, 0.6);
+            width: 62.5%;
+            height: 37.5%;
+        }
+        .btn-talk {
+            margin-top: 7.75%;
+            button {
+                cursor: pointer;
+                width: 220px;
+                height: 56px;
+                background: #5A98D0;
+                border-radius: 10px;
+                font-family: $font-gilroy;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: #FFFFFF;
+                border: 0;
+            }
+        }
+    }
+    .line {
+        border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+    }
+    .contacts {
+        display: flex;
+        margin-left: 18.23%;
+        padding-top: 8.3%;
+        .logo-name-and-contacts {
+            .logo-name {
+                display: flex;
+                align-items: center;
+                img {
+                    height: 32px;
+                    width: 48px;
+                    margin-right: 16px;                    
+                }
+                h3 {
+                    font-family: $font-gilroy;
+                    font-size: 28px;
+                    line-height: 46px;
+                    letter-spacing: 0.02em;
+                    color: #FFFFFF;
+                }
+            }
+            div {
+                display: flex;
+                font-family: $font-gilroy;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                width: 264px;
+                span {
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: 0.05em;
+                    color: #FFFFFF;
+                    margin-right: 16px;
+                }
+                &:nth-child(2) {
+                    margin-top: 40px;
+                }
+                &:nth-child(3), &:nth-child(4) {
+                    margin-top: 24px;
+                }
+                &:nth-child(5) {
+                    margin-top: 64px;
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: 0.05em;
+                    color: rgb(255, 255, 255, 0.4);
+                    width: fit-content;
+                }
+            }
+        }
+        .about-follow-us {
+            display: flex;
+            flex-direction: column;
+            &:nth-child(2) {
+                margin-left: 10.5%;
+            }
+            &:nth-child(3) {
+                margin-left: 15.3%;
+            }
+            span {
+                font-family: $font-gilroy;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+            a {
+                cursor: pointer;
+                margin-top: 16px;
+                text-decoration: none;
+                font-family: $font-gilroy;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+                &:nth-child(2) {
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+}

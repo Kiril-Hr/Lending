@@ -1,0 +1,631 @@
+.logo-Menu {
+  padding: 2.95% 6.1% 0 6.1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.logo-Menu img {
+  height: 48px;
+  width: 48px;
+}
+.logo-Menu div {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+.logo-Menu div::before, .logo-Menu div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 4px;
+  height: 3px;
+  width: 24px;
+  background-color: #356EAD;
+  transition: all 0.3s ease 0.1s;
+}
+.logo-Menu div::after {
+  top: 8px;
+}
+.logo-Menu div::before {
+  bottom: 7px;
+}
+.logo-Menu div span {
+  position: absolute;
+  display: block;
+  left: 4px;
+  height: 3px;
+  width: 24px;
+  background-color: #356EAD;
+  top: 15px;
+  transition: all 0.3s ease 0.1s;
+}
+
+.contact-us-block-and-contacts {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #316099;
+  border-radius: 0px 200px 0px 0px;
+  padding: 6.67% 14.45% 4.7% 0;
+  margin-right: 7.03%;
+}
+.contact-us-block-and-contacts .contact-us-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  margin-left: 18.23%;
+  padding-bottom: 8.22%;
+}
+.contact-us-block-and-contacts .contact-us-block h3 {
+  font-family: "Gilroy";
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 5.9%;
+  width: 58%;
+  height: 45%;
+}
+.contact-us-block-and-contacts .contact-us-block p {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 62.5%;
+  height: 37.5%;
+}
+.contact-us-block-and-contacts .contact-us-block .btn-talk {
+  margin-top: 7.75%;
+}
+.contact-us-block-and-contacts .contact-us-block .btn-talk button {
+  cursor: pointer;
+  width: 220px;
+  height: 56px;
+  background: #5A98D0;
+  border-radius: 10px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  border: 0;
+}
+.contact-us-block-and-contacts .line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.contact-us-block-and-contacts .contacts {
+  display: flex;
+  margin-left: 18.23%;
+  padding-top: 8.3%;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts .logo-name {
+  display: flex;
+  align-items: center;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts .logo-name img {
+  height: 32px;
+  width: 48px;
+  margin-right: 16px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts .logo-name h3 {
+  font-family: "Gilroy";
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div {
+  display: flex;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  width: 264px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div span {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(2) {
+  margin-top: 40px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(3), .contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(4) {
+  margin-top: 24px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(5) {
+  margin-top: 64px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.4);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us:nth-child(2) {
+  margin-left: 10.5%;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us:nth-child(3) {
+  margin-left: 15.3%;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us span {
+  font-family: "Gilroy";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us a {
+  cursor: pointer;
+  margin-top: 16px;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us a:nth-child(2) {
+  margin-top: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(152, 195, 232, 0.2) 8.84%, rgba(152, 195, 232, 0) 31.12%);
+  width: 100%;
+}
+
+.box-header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.box-header-text .illustration {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  margin: 10% 1.7% 4% 47%;
+}
+.box-header-text .illustration img {
+  width: 100%;
+  height: 100%;
+}
+.box-header-text .text-new-option {
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  margin: 7.35% 0 0 15.4%;
+}
+.box-header-text .text-new-option h2 {
+  font-family: "Galien";
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.box-header-text .text-new-option p {
+  margin-top: 6%;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(31, 63, 104, 0.6);
+  width: 425px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.box-header-text .text-new-option button {
+  cursor: pointer;
+  margin: 13% 0 34% 0;
+  width: 220px;
+  height: 56px;
+  background: #5A98D0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border: 0;
+  border-radius: 10px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.main {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 14% 15.6% 0 15.6%;
+}
+.what-we-do .text-what-we-do-1-col h3 {
+  width: 64%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "Gilroy";
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #316099;
+}
+
+.under-text {
+  margin: 28.24% 0 0 14.3%;
+}
+
+.block-what-we-do {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80.9%;
+  padding: 48px;
+  background: #FFFFFF;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.block-what-we-do div {
+  background-image: url(../image/blue-guy.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 182px;
+  height: 132px;
+  margin: 0 76px 56px 26px;
+}
+.block-what-we-do h4 {
+  font-family: "Gilroy";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+}
+.block-what-we-do p {
+  margin-top: 16px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(31, 63, 104, 0.6);
+}
+.block-what-we-do a {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Gilroy";
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5A98D0;
+  text-decoration: none;
+  margin-top: 32px;
+}
+.block-what-we-do a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../image/Arrow-block.png);
+  width: 16px;
+  height: 16px;
+  top: 7px;
+  left: 100px;
+}
+
+.col-2 .block-what-we-do div {
+  background-image: url(../image/red-guy.png);
+  width: 145px;
+  height: 124px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+.col-2 .block-what-we-do:first-child {
+  margin-bottom: 100px;
+}
+.col-2 .block-what-we-do:first-child div {
+  position: relative;
+}
+.col-2 .block-what-we-do:first-child div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../image/red-guy-features.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 275px;
+  height: 174px;
+  left: -43%;
+  bottom: 25%;
+}
+.col-2 .block-what-we-do:last-child div {
+  background-image: url(../image/red-girl.png);
+  width: 171px;
+  height: 132px;
+  right: 15px;
+  position: relative;
+}
+
+.goal {
+  padding: 14.07% 15.6%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.goal .text-about-finish-project {
+  display: flex;
+}
+.goal .text-about-finish-project h3 {
+  font-family: "Gilroy";
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+}
+.goal .text-about-finish-project p {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(31, 63, 104, 0.6);
+  width: 63%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 9.9%;
+}
+.goal .smart-home-ill {
+  position: relative;
+  margin-top: 10.2%;
+}
+.goal .smart-home-ill p {
+  position: absolute;
+  right: 40px;
+  top: 102px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+}
+.goal .smart-home-ill p:first-child {
+  font-family: "Gilroy";
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  top: 48px;
+}
+.goal .smart-home-ill img {
+  width: 100%;
+  height: 100%;
+}
+.goal .apps {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  margin-top: 10.2%;
+}
+.goal .apps .spart-app {
+  position: relative;
+  margin-right: 20px;
+}
+.goal .apps .spart-app img {
+  width: 100%;
+  height: 100%;
+}
+.goal .apps .spart-app p {
+  position: absolute;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+  top: 74px;
+  margin-left: 32px;
+}
+.goal .apps .spart-app p:first-child {
+  font-family: "Gilroy";
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  top: 24px;
+}
+.goal .apps .car-app {
+  position: relative;
+}
+.goal .apps .car-app img {
+  width: 100%;
+  height: 100%;
+}
+.goal .apps .car-app p {
+  position: absolute;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+  top: 74px;
+  margin-left: 32px;
+}
+.goal .apps .car-app p:first-child {
+  font-family: "Gilroy";
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  top: 24px;
+}
+
+.footer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #5A98D0;
+  border-radius: 200px 0px 0px 0px;
+}
+.footer .beloved-client {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 7.05% 0;
+}
+.footer .beloved-client .text-beloved-client {
+  margin: 0 15.6%;
+  display: flex;
+}
+.footer .beloved-client .text-beloved-client h3 {
+  font-family: "Gilroy";
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.footer .beloved-client .text-beloved-client p {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 59.7%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 10.33%;
+}
+.footer .beloved-client .client-blocks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: unset;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-wrap: wrap;
+  margin: 8.15% 15.6% 0 15.6%;
+}
+.footer .beloved-client .client-blocks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gilroy";
+  font-size: 20px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  color: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.footer .beloved-client .client-blocks [class*=logo-client-up] {
+  width: calc((1vh + 1vw) * 9.67);
+  height: calc((1vh + 1vw) * 5.29);
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+.footer .beloved-client .client-blocks [class*=logo-client-up]:nth-child(4) {
+  border-right: 0;
+}
+.footer .beloved-client .client-blocks [class*=logo-client-down] {
+  width: calc((1vh + 1vw) * 9.67);
+  height: calc((1vh + 1vw) * 5.29);
+  border-right: 1px solid #FFFFFF;
+}
+.footer .beloved-client .client-blocks .more-clients {
+  width: calc((1vh + 1vw) * 9.67);
+  height: calc((1vh + 1vw) * 5.29);
+  background: rgba(31, 63, 104, 0.2);
+}
+
+@media (min-width: 1580px) {
+  .goal .apps {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1290px) {
+  .goal .apps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .goal .apps .spart-app {
+    width: 50%;
+    height: 50%;
+    margin: 0 0 20px 0;
+  }
+  .goal .apps .car-app {
+    width: 50%;
+    height: 50%;
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 1290px) {
+  .what-we-do {
+    flex-direction: column;
+  }
+  .what-we-do .text-what-we-do-1-col h3 {
+    width: 80%;
+  }
+  .what-we-do .col-2 {
+    flex-wrap: wrap;
+  }
+  .under-text {
+    margin: 50px 0 100px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

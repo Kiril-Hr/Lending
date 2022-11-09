@@ -1,0 +1,492 @@
+.logo-Menu {
+  padding: 2.95% 6.1% 0 6.1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.logo-Menu img {
+  height: 48px;
+  width: 48px;
+}
+.logo-Menu div {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+.logo-Menu div::before, .logo-Menu div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 4px;
+  height: 3px;
+  width: 24px;
+  background-color: #356EAD;
+  transition: all 0.3s ease 0.1s;
+}
+.logo-Menu div::after {
+  top: 8px;
+}
+.logo-Menu div::before {
+  bottom: 7px;
+}
+.logo-Menu div span {
+  position: absolute;
+  display: block;
+  left: 4px;
+  height: 3px;
+  width: 24px;
+  background-color: #356EAD;
+  top: 15px;
+  transition: all 0.3s ease 0.1s;
+}
+
+.layer-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 3.67% 0 4.1% 0;
+}
+.layer-header img {
+  width: 100%;
+}
+.layer-header h3 {
+  top: 50px;
+  position: absolute;
+  font-family: "Gilroy";
+  font-size: 44px;
+  line-height: 74px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.layer-header p {
+  width: 57.1%;
+  bottom: 50px;
+  position: absolute;
+  font-family: "Gilroy";
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-us-block-and-contacts {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #316099;
+  border-radius: 0px 200px 0px 0px;
+  padding: 6.67% 14.45% 4.7% 0;
+  margin-right: 7.03%;
+}
+.contact-us-block-and-contacts .contact-us-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  margin-left: 18.23%;
+  padding-bottom: 8.22%;
+}
+.contact-us-block-and-contacts .contact-us-block h3 {
+  font-family: "Gilroy";
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 5.9%;
+  width: 58%;
+  height: 45%;
+}
+.contact-us-block-and-contacts .contact-us-block p {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 62.5%;
+  height: 37.5%;
+}
+.contact-us-block-and-contacts .contact-us-block .btn-talk {
+  margin-top: 7.75%;
+}
+.contact-us-block-and-contacts .contact-us-block .btn-talk button {
+  cursor: pointer;
+  width: 220px;
+  height: 56px;
+  background: #5A98D0;
+  border-radius: 10px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  border: 0;
+}
+.contact-us-block-and-contacts .line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.contact-us-block-and-contacts .contacts {
+  display: flex;
+  margin-left: 18.23%;
+  padding-top: 8.3%;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts .logo-name {
+  display: flex;
+  align-items: center;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts .logo-name img {
+  height: 32px;
+  width: 48px;
+  margin-right: 16px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts .logo-name h3 {
+  font-family: "Gilroy";
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div {
+  display: flex;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  width: 264px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div span {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(2) {
+  margin-top: 40px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(3), .contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(4) {
+  margin-top: 24px;
+}
+.contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(5) {
+  margin-top: 64px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.4);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us:nth-child(2) {
+  margin-left: 10.5%;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us:nth-child(3) {
+  margin-left: 15.3%;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us span {
+  font-family: "Gilroy";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us a {
+  cursor: pointer;
+  margin-top: 16px;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.contact-us-block-and-contacts .contacts .about-follow-us a:nth-child(2) {
+  margin-top: 32px;
+}
+
+.main {
+  padding: 0 15.6% 7.05% 15.6%;
+}
+.main .search {
+  width: 100%;
+  height: 56px;
+}
+.main .search form {
+  position: relative;
+}
+.main .search form input {
+  padding: 18px 8px 18px 72px;
+  border: 0;
+  width: 100%;
+  height: 56px;
+  background: #F4F4F4;
+  border-radius: 10px;
+}
+.main .search form input::-moz-placeholder {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(31, 63, 104, 0.6);
+}
+.main .search form input:-ms-input-placeholder {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(31, 63, 104, 0.6);
+}
+.main .search form input::placeholder {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(31, 63, 104, 0.6);
+}
+.main .search form button {
+  background-image: url(../image/search.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  left: 27px;
+  top: 19px;
+  position: absolute;
+}
+.main article {
+  margin-top: 6%;
+}
+.main article .popular {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 3.5%;
+}
+.main article .popular h4 {
+  text-transform: uppercase;
+  font-family: "Galien";
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  color: rgba(53, 110, 173, 0.8);
+  margin-bottom: 3.4%;
+}
+.main article .popular .container-popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+}
+.main article .popular .container-popular .most-popular {
+  margin-right: 2.15%;
+}
+.main article .popular .container-popular .most-popular .short-description-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main article .popular .container-popular .most-popular .short-description-article .name-decrc h3 {
+  font-size: 48px;
+  font-family: "Galien";
+  line-height: 58px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  margin-bottom: 8.5%;
+}
+.main article .popular .container-popular .most-popular .short-description-article .name-decrc p {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20%;
+}
+.main article a {
+  display: block;
+  margin-top: 5.75%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(53, 110, 173, 0.8);
+}
+.main article .line-under-popular {
+  margin-top: 2.56%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.main article .other-articles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main article .other-articles [class*=article] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main article .other-articles [class*=article] .date-name-links .links {
+  margin-right: 0;
+}
+.main article .other-articles img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 16px;
+}
+.main article .other-articles h4 {
+  width: 100%;
+  height: 114px;
+  font-family: "Galien";
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  margin-bottom: 16px;
+}
+.main article .other-articles p {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px;
+}
+.main article .all-articles {
+  display: flex;
+  flex-direction: column;
+}
+.main article .all-articles h3 {
+  font-family: "Gilroy";
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  color: #356EAD;
+  margin: 56px 0 32px 0;
+}
+.main article .all-articles [class*=article] {
+  display: flex;
+  margin-bottom: 32px;
+}
+.main article .all-articles [class*=article]:img {
+  width: 300px;
+  height: 200px;
+}
+.main article .all-articles [class*=article] .container-for-descr {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.main article .all-articles [class*=article] .container-for-descr .title-desc h4 {
+  font-family: "Galien";
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  margin-bottom: 16px;
+}
+.main article .all-articles [class*=article] .container-for-descr .title-desc p {
+  width: 87.2%;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 14px;
+}
+.main article .all-articles [class*=article] .container-for-descr .date-name-links .links {
+  margin-right: 60%;
+}
+.main article .all-articles [class*=article] .container-for-descr .date-name-links .links:nth-child(1) {
+  width: 18px;
+  height: 22px;
+}
+.main article .all-articles [class*=article] .container-for-descr .date-name-links .links:nth-child(2) {
+  width: 18px;
+  height: 20px;
+}
+.main article .all-articles .btn-post {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+}
+.main article .all-articles .btn-post button {
+  cursor: pointer;
+  background-color: unset;
+  border: 0;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #356EAD;
+}
+.main article .all-articles .btn-post .first-btn img {
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+}
+.main article .all-articles .btn-post .second-btn img {
+  width: 12px;
+  height: 12px;
+  margin-left: 20px;
+}
+
+.date-name-links {
+  display: flex;
+  justify-content: space-between;
+}
+.date-name-links .name-date-time-of-reading h5 {
+  font-family: "Gilroy";
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  margin-bottom: 4px;
+}
+.date-name-links .name-date-time-of-reading p {
+  font-family: "Gilroy";
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: rgba(30, 62, 102, 0.4);
+}
+.date-name-links .links {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-right: 21%;
+}
+.date-name-links .links img:nth-child(1) {
+  width: 18px;
+  height: 22px;
+  margin-right: 36px;
+}
+.date-name-links .links img:nth-child(2) {
+  width: 18px;
+  height: 20px;
+}/*# sourceMappingURL=style-blog.css.map */

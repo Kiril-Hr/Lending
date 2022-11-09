@@ -1,0 +1,30 @@
+.layer-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 3.67% 0 4.1% 0;
+    img {
+        width: 100%;
+    }
+    h3 {
+        top: 50px;
+        position: absolute;
+        font-family: $font-gilroy;
+        font-size: 44px;
+        line-height: 74px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+    }
+    p {
+        width: 57.1%;
+        bottom: 50px;
+        position: absolute;
+        font-family: $font-gilroy;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}

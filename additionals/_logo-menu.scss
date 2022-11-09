@@ -1,0 +1,40 @@
+.logo-Menu {
+    padding: 2.95% 6.1% 0 6.1%;
+    @include flex(space-between, center);
+    height: fit-content;
+    img {        
+        height: 48px;
+        width: 48px;
+    }
+    div {
+        position: relative;
+        height: 32px;
+        width: 32px;
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 4px;
+            height: 3px;
+            width: 24px;
+            background-color: #356EAD;
+            transition: all 0.3s ease 0.1s;
+        }
+        &::after {
+            top: 8px;
+        }
+        &::before {
+            bottom: 7px; 
+        }
+        span {
+            position: absolute;
+            display: block;
+            left: 4px;
+            height: 3px;
+            width: 24px;
+            background-color: #356EAD;
+            top: 15px;
+            transition: all 0.3s ease 0.1s;
+        }
+    }
+}

@@ -1,0 +1,179 @@
+@import '../additionals/mixins';
+@import '../additionals/variable';
+@import '../additionals/logo-menu';
+@import '../additionals/header';
+@import '../additionals/footer';
+
+.main {
+    padding: 56px 213px 96px 213px;
+    .form-contact-and-contact-det {
+        @include flex(space-between, unset);
+        margin-bottom: 96px;
+        .cont-det {
+            margin-top: 64px;
+            img {
+                width: fit-content;
+                height: fit-content;
+            }
+            h4 {
+                font-family: $font-gilroy;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.04em;
+                color: #1F3F68;
+            }
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                color: rgb(31, 63, 104);
+            }
+            .address {
+                margin: 70px 0 40px 0;
+                h4 {
+                    margin-bottom: 24px;
+                }
+                p {
+                    width: 300px;
+                    color: rgb(31, 63, 104, 0.6);
+                }
+            }
+            .phone {
+                margin: 40px 0 24px 0;
+                p {
+                    position: relative;
+                    margin: 0 0 16px 40px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-image: url(../image/phone.png);
+                        width: 18px;
+                        height: 18px;
+                        top: 4px;
+                        left: -40px;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 24px;
+                    }
+                }
+            }
+            .online-services {
+                display: flex;
+                flex-direction: column;
+                margin: 40px 0 24px 0;
+                h4 {
+                    margin-bottom: 24px;
+                }
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: 0.05em;
+                    color: #1F3F68;
+                    margin: 0 0 16px 40px;
+                    &:nth-child(2)::after {
+                        content: "";
+                        position: absolute;
+                        background-image: url(../image/network.png);
+                        width: 20px;
+                        height: 20px;
+                        top: 4px;
+                        left: -40px;
+                    }
+                    &:nth-child(3)::after {
+                        content: "";
+                        position: absolute;
+                        background-image: url(../image/email.png);
+                        width: 20px;
+                        height: 16px;
+                        top: 4px;
+                        left: -40px;
+                    }
+                }
+            }
+        }
+        .cont-form {
+            width: 57.5%;
+            height: fit-content;
+            background: #FFFFFF;
+            box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+            border-radius: 10px;
+            form {
+                padding: 56px;
+                h4 {
+                    font-family: $font-gilroy;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 0.04em;
+                    color: #1F3F68;
+                    margin-bottom: 48px;
+                }
+                p {
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.04em;
+                    color: rgb(31, 63, 104, 0.8);
+                    margin-bottom: 8px;
+                }
+                input {
+                    padding: 0 18px 0 36px;
+                    margin-bottom: 32px;
+                    width: calc(100% - 54px);
+                    height: 72px;
+                    border: 1px solid rgb(53, 110, 173, 0.4);
+                    border-radius: 10px;
+                }
+                textarea {
+                    display: block;
+                    padding: 20px 18px 8px 36px;
+                    width: calc(100% - 54px);
+                    height: 136px;
+                    resize: none;
+                    border: 1px solid rgb(53, 110, 173, 0.4);
+                    border-radius: 10px;
+                    margin-bottom: 72px;
+                }
+                button {
+                    width: 100%;
+                    height: 72px;
+                    border: none;
+                    background: #5A98D0;
+                    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+                    border-radius: 10px;
+                    font-family: $font-gilroy;
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                    letter-spacing: 0.04em;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+                textarea::placeholder {
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.04em;
+                    color: rgb(31, 63, 104, 0.2);
+                }
+                input::placeholder {
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.04em;
+                    color: rgb(31, 63, 104, 0.2);
+                }
+            }
+            
+        }
+    }
+    .map {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
