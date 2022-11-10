@@ -557,6 +557,7 @@
   display: flex;
   justify-content: center;
   align-self: center;
+  cursor: pointer;
   margin-right: 19.5%;
 }
 .date-name-links .links img:nth-child(1) {
