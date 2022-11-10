@@ -51,12 +51,12 @@
                 </div>
             </div>
             <div class="cont-form">
-                <form method="get">
+                <form method="post">
                     <h4>SEND US MESSAGE</h4>
                     <p>Full Name</p>
-                    <input type="text" placeholder="Your name" id="name">
+                    <input type="text" placeholder="Your name" id="name" maxlength="35" required>
                     <p>Email</p>
-                    <input type="email" placeholder="Your email" id="email">
+                    <input type="email" placeholder="Your email" id="email" maxlength="50" required>
                     <p>Message</p>
                     <textarea name="message" placeholder="Your message" id="message" cols="30" rows="10"></textarea>
                     <button type="submit">Submit</button>

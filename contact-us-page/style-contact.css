@@ -83,6 +83,7 @@
   border-bottom: 2px solid #1F3F68;
 }
 .submenu ul li a {
+  display: block;
   font-family: "Gilroy";
   text-decoration: none;
   width: 100%;
@@ -419,16 +420,26 @@
   height: 72px;
   border: 1px solid rgba(53, 110, 173, 0.4);
   border-radius: 10px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: rgb(31, 63, 104);
 }
 .main .form-contact-and-contact-det .cont-form form textarea {
   display: block;
-  padding: 20px 18px 8px 36px;
+  padding: 20px 18px 0 36px;
   width: calc(100% - 54px);
   height: 136px;
   resize: none;
   border: 1px solid rgba(53, 110, 173, 0.4);
   border-radius: 10px;
   margin-bottom: 72px;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: rgb(31, 63, 104);
 }
 .main .form-contact-and-contact-det .cont-form form button {
   width: 100%;

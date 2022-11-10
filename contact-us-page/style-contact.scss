@@ -125,16 +125,26 @@
                     height: 72px;
                     border: 1px solid rgb(53, 110, 173, 0.4);
                     border-radius: 10px;
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.04em;
+                    color: rgb(31, 63, 104);
                 }
                 textarea {
                     display: block;
-                    padding: 20px 18px 8px 36px;
+                    padding: 20px 18px 0 36px;
                     width: calc(100% - 54px);
                     height: 136px;
                     resize: none;
                     border: 1px solid rgb(53, 110, 173, 0.4);
                     border-radius: 10px;
                     margin-bottom: 72px;
+                    font-family: $font-gilroy;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.04em;
+                    color: rgb(31, 63, 104);
                 }
                 button {
                     width: 100%;

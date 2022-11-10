@@ -83,6 +83,7 @@
   border-bottom: 2px solid #1F3F68;
 }
 .submenu ul li a {
+  display: block;
   font-family: "Gilroy";
   text-decoration: none;
   width: 100%;
@@ -297,28 +298,33 @@
   position: relative;
 }
 .main .search form input {
-  padding: 18px 8px 18px 72px;
+  padding: 18px 18px 18px 72px;
   border: 0;
   width: 100%;
   height: 56px;
   background: #F4F4F4;
   border-radius: 10px;
+  font-size: 20px;
+  font-family: "Galien";
+  line-height: 58px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
 }
 .main .search form input::-moz-placeholder {
   font-family: "Gilroy";
-  font-size: 16px;
+  font-size: 20px;
   line-height: 19px;
   color: rgba(31, 63, 104, 0.6);
 }
 .main .search form input:-ms-input-placeholder {
   font-family: "Gilroy";
-  font-size: 16px;
+  font-size: 20px;
   line-height: 19px;
   color: rgba(31, 63, 104, 0.6);
 }
 .main .search form input::placeholder {
   font-family: "Gilroy";
-  font-size: 16px;
+  font-size: 20px;
   line-height: 19px;
   color: rgba(31, 63, 104, 0.6);
 }
@@ -418,6 +424,7 @@
 }
 .main article .other-articles [class*=article] .date-name-links .links {
   margin-right: 0;
+  cursor: pointer;
 }
 .main article .other-articles img {
   width: 100%;
@@ -487,6 +494,7 @@
   margin-bottom: 14px;
 }
 .main article .all-articles [class*=article] .container-for-descr .date-name-links .links {
+  cursor: pointer;
   margin-right: 60%;
 }
 .main article .all-articles [class*=article] .container-for-descr .date-name-links .links:nth-child(1) {
@@ -514,11 +522,13 @@
   color: #356EAD;
 }
 .main article .all-articles .btn-post .first-btn img {
+  cursor: pointer;
   width: 12px;
   height: 12px;
   margin-right: 20px;
 }
 .main article .all-articles .btn-post .second-btn img {
+  cursor: pointer;
   width: 12px;
   height: 12px;
   margin-left: 20px;
@@ -547,7 +557,7 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-right: 21%;
+  margin-right: 19.5%;
 }
 .date-name-links .links img:nth-child(1) {
   width: 18px;
