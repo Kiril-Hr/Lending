@@ -1,6 +1,7 @@
 const hbmenu = document.querySelector(".hbmenu");
 const submenu = document.querySelector(".submenu");
 const smEl = document.querySelectorAll(".sm-el");
+const subMenuActive = document.querySelector(".submenu");
 
 const hbmenuActive = hbmenu.addEventListener("click", () => {
   submenu.classList.toggle("active");
