@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-page</title>
-    <link rel="stylesheet" href="../additionals/reset.css">
+    <link rel="stylesheet" href="additionals/reset.css">
     <link rel="stylesheet" href="./home-page/style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="logo-Menu">
-            <img src="../image/logo.png" alt="logo">
-            <div>
+            <a href="index.html"><img src="image/logo.png" alt="logo"></a>
+            <div class="hbmenu">
                 <span></span>
+            </div>
+            <div class="submenu">
+                <ul>
+                    <li class="sm-el"><a href="index.html">Home</a><div></div></li>
+                    <li class="sm-el"><a href="blog-page/blog-page.html">Blogs</a><div></div></li>
+                    <li class="sm-el"><a href="contact-us-page/contact-page.html">Contact us</a><div></div></li>
+                </ul>
             </div>
         </div>
         <div class="box-header-text">
@@ -24,7 +31,7 @@
                 <button>See our Project</button>
             </div>
             <div class="illustration">
-                <img src="../image/illustration.png" alt="two people with icons">
+                <img src="image/illustration.png" alt="two people with icons">
             </div>
         </div>
     </header>
@@ -64,18 +71,18 @@
             <div class="smart-home-ill">
                 <p>Smart Home Installation</p>
                 <p>In Muarakana Housing Estate</p>
-                <img src="../image/smart-home-ill.png" alt="Smart-home">
+                <img src="image/smart-home-ill.png" alt="Smart-home">
             </div>
             <div class="apps">
                 <div class="spart-app">
                     <p>Sparklite App</p>
                     <p>Marketplace</p>
-                    <img src="../image/spark-app.png" alt="Sparklite App">
+                    <img src="image/spark-app.png" alt="Sparklite App">
                 </div>
                 <div class="car-app">
                     <p>Car-Rapetition App</p>
                     <p>Board</p>
-                    <img src="../image/car-app.png" alt="Car-Rapetition App">
+                    <img src="image/car-app.png" alt="Car-Rapetition App">
                 </div>
             </div>
         </div>
@@ -127,7 +134,7 @@
             <div class="contacts">
                 <div class="logo-name-and-contacts">
                     <div class="logo-name">
-                        <img src="../image/logo-footer.png" alt="logo 2">
+                        <img src="image/logo-footer.png" alt="logo 2">
                         <h3>Afrianska</h3>
                     </div>
                     <div><span>A.</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
@@ -151,6 +158,6 @@
         </div>
     </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
