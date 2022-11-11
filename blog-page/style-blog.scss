@@ -62,8 +62,13 @@
             }
             .container-popular {
                 @include flex(space-between, unset);
+                img {
+                    height: auto;
+                    max-height: 510px;
+                }
                 .most-popular {
                     margin-right: 2.15%;
+                    
                     .short-description-article {
                         display: flex;
                         flex-direction: column;
@@ -239,7 +244,6 @@
         }
     }
 }
-
 .date-name-links {
     display: flex;
     justify-content: space-between;
@@ -276,6 +280,34 @@
                 width: 18px;
                 height: 20px;
             }
+        }
+    }
+}
+@media(max-width: 1200px) {
+ .container-popular {
+    @include flex(unset, unset);
+    flex-direction: column-reverse;
+    .most-popular {
+        margin: 0;
+        .short-description-article {
+            .name-decrc {
+                    h3 {
+                        margin: 2.5% 0 0 0;
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .other-articles {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 5%;
+        [class*='article'] {
+            width: 42%;
+            margin-bottom: 2.5%;
         }
     }
 }

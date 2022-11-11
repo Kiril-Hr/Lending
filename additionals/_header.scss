@@ -7,24 +7,31 @@
         width: 100%;
     }
     h3 {
-        top: 50px;
+        top: 20%;
         position: absolute;
         font-family: $font-gilroy;
-        font-size: 44px;
-        line-height: 74px;
+        font-size: calc($size * 1.8);
+        line-height: calc($size * 3);
         text-align: center;
         letter-spacing: 0.04em;
         color: #FFFFFF;
     }
     p {
         width: 57.1%;
-        bottom: 50px;
+        bottom: 20%;
         position: absolute;
         font-family: $font-gilroy;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: calc($size * 0.85);
+        line-height: calc($size * 1.25);
         text-align: center;
         letter-spacing: 0.04em;
         color: rgba(255, 255, 255, 0.4);
+    }
+}
+@media(max-width: 800px) {
+    .layer-header {
+        p {
+            width: 100%;
+        }
     }
 }
