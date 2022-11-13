@@ -30,8 +30,8 @@
         margin: 7.35% 0 0 15.4%;
         h2 {
             font-family: $font-galien;
-            font-size: 64px;
-            line-height: 74px;
+            font-size: calc($size * 2.6);
+            line-height: calc($size * 3.1);
             letter-spacing: 0.04em;
             color: #1F3F68;
             height: fit-content;
@@ -39,11 +39,11 @@
         p {
             margin-top: 6%;
             font-family: $font-gilroy;
-            font-size: 16px;
-            line-height: 26px;
+            font-size: calc($size * 0.65);
+            line-height: calc($size * 1.1);
             letter-spacing: 0.05em;
             color: rgb(31, 63, 104, 0.6);
-            width: 425px;
+            width: 40.2%;
             height: fit-content;
         }
         button {
@@ -77,8 +77,8 @@
             width: 64%;
             height: fit-content;
             font-family: $font-gilroy;
-            font-size: 36px;
-            line-height: 46px;
+            font-size: calc($size * 2.1);
+            line-height: calc($size * 2.6);
             letter-spacing: 0.05em;
             color: #316099;
         }
@@ -101,7 +101,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 182px;
         height: 132px;
         margin: 0 76px 56px 26px;
     }
@@ -328,8 +327,8 @@
             a {
                 @include flex(center, center);
                 font-family: $font-gilroy;
-                font-size: 20px;
-                line-height: 46px;
+                font-size: calc($size * 1);
+                line-height: calc($size * 1.8);
                 letter-spacing: 0.02em;
                 color: #F2F2F2;
                 width: 100%;
@@ -400,5 +399,31 @@
     }
     .under-text {
         margin: 50px 0 100px 0;
+    }
+}
+@media(max-width: 610px) {
+    .text-about-finish-project {
+        flex-direction: column;
+        p {
+            width: 100%!important;
+            margin: 8% 0 0 0!important;
+        }
+    }
+    .text-beloved-client {
+        flex-direction: column;
+        margin-top: 8%;
+        h3 {
+            margin: 5% 0;
+        }
+        p {
+            width: 100%!important;
+            margin: 0!important;
+        }
+    }
+    .block-what-we-do {
+        div {
+            height: calc($size * 6.7);
+            width: calc($size * 10.6);
+        }
     }
 }

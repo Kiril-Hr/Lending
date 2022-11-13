@@ -149,9 +149,27 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
+@media (max-width: 950px) {
+  .layer-header p {
+    bottom: 10%;
+  }
+}
 @media (max-width: 800px) {
+  .layer-header h3 {
+    top: 10%;
+  }
   .layer-header p {
     width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .layer-header h3 {
+    font-size: calc((1vh + 1vw) * 1.7);
+    line-height: calc((1vh + 1vw) * 2.5);
+  }
+  .layer-header p {
+    font-size: calc((1vh + 1vw) * 0.75);
+    line-height: calc((1vh + 1vw) * 1.15);
   }
 }
 .contact-us-block-and-contacts {
@@ -175,8 +193,8 @@
 }
 .contact-us-block-and-contacts .contact-us-block h3 {
   font-family: "Gilroy";
-  font-size: 36px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 1.45);
+  line-height: calc((1vh + 1vw) * 1.8);
   letter-spacing: 0.05em;
   color: #FFFFFF;
   margin-bottom: 5.9%;
@@ -185,8 +203,8 @@
 }
 .contact-us-block-and-contacts .contact-us-block p {
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.65);
+  line-height: calc((1vh + 1vw) * 1.2);
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.6);
   width: 62.5%;
@@ -228,24 +246,24 @@
 }
 .contact-us-block-and-contacts .contacts .logo-name-and-contacts .logo-name h3 {
   font-family: "Gilroy";
-  font-size: 28px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 1.25);
+  line-height: calc((1vh + 1vw) * 1.6);
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
 .contact-us-block-and-contacts .contacts .logo-name-and-contacts div {
   display: flex;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.65);
+  line-height: calc((1vh + 1vw) * 1);
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  width: 264px;
+  width: calc((1vh + 1vw) * 10.8);
 }
 .contact-us-block-and-contacts .contacts .logo-name-and-contacts div span {
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.65);
+  line-height: calc((1vh + 1vw) * 1);
   letter-spacing: 0.05em;
   color: #FFFFFF;
   margin-right: 16px;
@@ -259,8 +277,8 @@
 .contact-us-block-and-contacts .contacts .logo-name-and-contacts div:nth-child(5) {
   margin-top: 64px;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.65);
+  line-height: calc((1vh + 1vw) * 1);
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.4);
   width: -webkit-fit-content;
@@ -279,8 +297,8 @@
 }
 .contact-us-block-and-contacts .contacts .about-follow-us span {
   font-family: "Gilroy";
-  font-size: 20px;
-  line-height: 30px;
+  font-size: calc((1vh + 1vw) * 0.7);
+  line-height: calc((1vh + 1vw) * 1.1);
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
@@ -289,8 +307,8 @@
   margin-top: 16px;
   text-decoration: none;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.65);
+  line-height: calc((1vh + 1vw) * 1);
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
@@ -298,6 +316,25 @@
   margin-top: 32px;
 }
 
+@media (max-width: 820px) {
+  .contact-us-block {
+    flex-direction: column;
+  }
+  .contact-us-block-and-contacts .contacts .about-follow-us:nth-child(2) {
+    margin-left: 3.5%;
+  }
+  .contact-us-block-and-contacts .contacts .about-follow-us:nth-child(3) {
+    margin-left: 5.3%;
+  }
+}
+@media (max-width: 500px) {
+  .contacts .logo-name {
+    flex-direction: column;
+  }
+  .contacts .logo-name img {
+    margin: 0 0 10% 0;
+  }
+}
 .main {
   padding: 0 15.6% 7.05% 15.6%;
 }
@@ -352,10 +389,11 @@
   top: 19px;
   position: absolute;
 }
-.main article {
+
+article {
   margin-top: 6%;
 }
-.main article .popular {
+article .popular {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -364,7 +402,7 @@
   height: fit-content;
   margin-bottom: 3.5%;
 }
-.main article .popular h4 {
+article .popular h4 {
   text-transform: uppercase;
   font-family: "Galien";
   font-size: 20px;
@@ -373,24 +411,25 @@
   color: rgba(53, 110, 173, 0.8);
   margin-bottom: 3.4%;
 }
-.main article .popular .container-popular {
+article .container-popular {
   display: flex;
   justify-content: space-between;
   align-items: unset;
 }
-.main article .popular .container-popular img {
+article .container-popular img {
+  width: 100%;
   height: auto;
   max-height: 510px;
 }
-.main article .popular .container-popular .most-popular {
+article .most-popular {
   margin-right: 2.15%;
 }
-.main article .popular .container-popular .most-popular .short-description-article {
+article .most-popular .short-description-article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.main article .popular .container-popular .most-popular .short-description-article .name-decrc h3 {
+article .most-popular .short-description-article .name-decrc h3 {
   font-size: 48px;
   font-family: "Galien";
   line-height: 58px;
@@ -398,7 +437,7 @@
   color: #1F3F68;
   margin-bottom: 8.5%;
 }
-.main article .popular .container-popular .most-popular .short-description-article .name-decrc p {
+article .most-popular .short-description-article .name-decrc p {
   font-family: "Gilroy";
   font-size: 16px;
   line-height: 26px;
@@ -406,7 +445,7 @@
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 20%;
 }
-.main article a {
+article a {
   display: block;
   margin-top: 5.75%;
   text-decoration: none;
@@ -419,58 +458,16 @@
   text-transform: uppercase;
   color: rgba(53, 110, 173, 0.8);
 }
-.main article .line-under-popular {
+article .line-under-popular {
   margin-top: 2.56%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-.main article .other-articles {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.main article .other-articles [class*=article] {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 32%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.main article .other-articles [class*=article] .date-name-links .links {
-  margin-right: 0;
-  cursor: pointer;
-}
-.main article .other-articles img {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 16px;
-}
-.main article .other-articles h4 {
-  width: 100%;
-  height: 114px;
-  font-family: "Galien";
-  font-size: 28px;
-  line-height: 38px;
-  letter-spacing: 0.04em;
-  color: #1F3F68;
-  margin-bottom: 16px;
-}
-.main article .other-articles p {
-  font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.04em;
-  color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 16px;
-}
-.main article .all-articles {
+
+.all-articles {
   display: flex;
   flex-direction: column;
 }
-.main article .all-articles h3 {
+.all-articles h3 {
   font-family: "Gilroy";
   font-size: 20px;
   line-height: 25px;
@@ -478,55 +475,55 @@
   color: #356EAD;
   margin: 56px 0 32px 0;
 }
-.main article .all-articles [class*=article] {
+.all-articles [class*=article] {
   display: flex;
   margin-bottom: 32px;
 }
-.main article .all-articles [class*=article]:img {
+.all-articles [class*=article]:img {
   width: 300px;
   height: 200px;
 }
-.main article .all-articles [class*=article] .container-for-descr {
+.all-articles [class*=article] .container-for-descr {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
-.main article .all-articles [class*=article] .container-for-descr .title-desc h4 {
+.all-articles [class*=article] .container-for-descr .title-desc h4 {
   font-family: "Galien";
-  font-size: 28px;
-  line-height: 38px;
+  font-size: calc((1vh + 1vw) * 1.15);
+  line-height: calc((1vh + 1vw) * 1.45);
   letter-spacing: 0.04em;
   color: #1F3F68;
   margin-bottom: 16px;
 }
-.main article .all-articles [class*=article] .container-for-descr .title-desc p {
+.all-articles [class*=article] .container-for-descr .title-desc p {
   width: 87.2%;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.65);
+  line-height: calc((1vh + 1vw) * 1.1);
   letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 14px;
 }
-.main article .all-articles [class*=article] .container-for-descr .date-name-links .links {
+.all-articles [class*=article] .container-for-descr .date-name-links .links {
   cursor: pointer;
   margin-right: 60%;
 }
-.main article .all-articles [class*=article] .container-for-descr .date-name-links .links:nth-child(1) {
+.all-articles [class*=article] .container-for-descr .date-name-links .links:nth-child(1) {
   width: 18px;
   height: 22px;
 }
-.main article .all-articles [class*=article] .container-for-descr .date-name-links .links:nth-child(2) {
+.all-articles [class*=article] .container-for-descr .date-name-links .links:nth-child(2) {
   width: 18px;
   height: 20px;
 }
-.main article .all-articles .btn-post {
+.all-articles .btn-post {
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
   align-items: unset;
 }
-.main article .all-articles .btn-post button {
+.all-articles .btn-post button {
   cursor: pointer;
   background-color: unset;
   border: 0;
@@ -536,17 +533,61 @@
   letter-spacing: 0.04em;
   color: #356EAD;
 }
-.main article .all-articles .btn-post .first-btn img {
+.all-articles .btn-post .first-btn img {
   cursor: pointer;
   width: 12px;
   height: 12px;
   margin-right: 20px;
 }
-.main article .all-articles .btn-post .second-btn img {
+.all-articles .btn-post .second-btn img {
   cursor: pointer;
   width: 12px;
   height: 12px;
   margin-left: 20px;
+}
+
+.other-articles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.other-articles [class*=article] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.other-articles [class*=article] .date-name-links .links {
+  margin-right: 0;
+  cursor: pointer;
+}
+.other-articles img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 16px;
+}
+.other-articles h4 {
+  width: 100%;
+  height: calc((1vh + 1vw) * 4.7);
+  font-family: "Galien";
+  font-size: calc((1vh + 1vw) * 1.2);
+  line-height: calc((1vh + 1vw) * 1.5);
+  letter-spacing: 0.04em;
+  color: hwb(214 12% 59%);
+  margin-bottom: 16px;
+}
+.other-articles p {
+  font-family: "Gilroy";
+  font-size: calc((1vh + 1vw) * 0.65);
+  line-height: calc((1vh + 1vw) * 1.1);
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px;
 }
 
 .date-name-links {
@@ -586,6 +627,9 @@
 }
 
 @media (max-width: 1200px) {
+  article .all-articles [class*=article] img {
+    width: 100%;
+  }
   .container-popular {
     display: flex;
     justify-content: unset;
@@ -596,15 +640,35 @@
     margin: 0;
   }
   .container-popular .most-popular .short-description-article .name-decrc h3 {
-    margin: 2.5% 0 0 0;
+    margin: 2.5% 0 2.5% 0;
   }
   .container-popular .most-popular .short-description-article .name-decrc p {
-    margin-bottom: 0;
+    margin-bottom: 2.5%;
+  }
+  .all-articles [class*=article] {
+    flex-direction: column;
+    margin-bottom: 8%;
+  }
+  .all-articles [class*=article] .container-for-descr {
+    margin-left: 0;
+  }
+  .all-articles [class*=article] .container-for-descr .title-desc h4 {
+    margin-top: 3%;
+  }
+  .all-articles [class*=article] .container-for-descr .title-desc p {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .all-articles [class*=article] .container-for-descr .date-name-links .links {
+    margin-right: 10% !important;
+  }
+  .date-name-links .links {
+    margin-right: 0;
   }
   .other-articles {
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 5%;
+    justify-content: space-between;
+    gap: 4%;
   }
   .other-articles [class*=article] {
     width: 42%;

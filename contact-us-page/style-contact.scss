@@ -5,7 +5,7 @@
 @import '../additionals/footer';
 
 .main {
-    padding: 56px 213px 96px 213px;
+    padding: 4.1% 15.6% 7.03% 15.6%;
     .form-contact-and-contact-det {
         @include flex(space-between, unset);
         margin-bottom: 96px;
@@ -101,7 +101,7 @@
             box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
             border-radius: 10px;
             form {
-                padding: 56px;
+                padding: 10.3%;
                 h4 {
                     font-family: $font-gilroy;
                     font-size: 20px;
@@ -186,4 +186,44 @@
             height: 100%;
         }
     }
+}
+@media(max-width: 1200px) {
+    .form-contact-and-contact-det {
+        flex-direction: column;
+        .cont-det {
+            display: flex;
+            flex-direction: column;
+            img {
+                align-self: center;
+            }
+            .container-for-cont-det {
+                @include flex(space-between, baseline)
+
+            }
+        }
+        .cont-form {
+            width: 100%!important;
+            margin-top: 8%;
+            align-self: center;
+        }
+    }
+}
+@media(max-width: 1140px) {
+    .container-for-cont-det {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 1000px) {
+    .cont-form {
+        form {
+            input {
+                width: 100%!important;
+            }
+            textarea {
+                width: 100%!important;
+            }
+        }
+    }
+    
+    
 }

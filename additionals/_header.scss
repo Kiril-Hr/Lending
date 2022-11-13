@@ -28,10 +28,30 @@
         color: rgba(255, 255, 255, 0.4);
     }
 }
+@media(max-width: 950px) {
+    .layer-header p {
+        bottom: 10%;
+    }
+}
 @media(max-width: 800px) {
     .layer-header {
+        h3 {
+            top: 10%;
+        }
         p {
             width: 100%;
+        }
+    }
+}
+@media(max-width: 550px) {
+    .layer-header {
+        h3 {
+            font-size: calc((1vh + 1vw) * 1.7);
+            line-height: calc((1vh + 1vw) * 2.5);
+        }
+        p {
+            font-size: calc((1vh + 1vw) * 0.75);
+            line-height: calc((1vh + 1vw) * 1.15);
         }
     }
 }
