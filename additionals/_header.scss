@@ -1,57 +1,65 @@
 .layer-header {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin: 3.67% 0 4.1% 0;
-    img {
-        width: 100%;
-    }
-    h3 {
-        top: 20%;
-        position: absolute;
-        font-family: $font-gilroy;
-        font-size: calc($size * 1.8);
-        line-height: calc($size * 3);
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-    }
-    p {
-        width: 57.1%;
-        bottom: 20%;
-        position: absolute;
-        font-family: $font-gilroy;
-        font-size: calc($size * 0.85);
-        line-height: calc($size * 1.25);
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: rgba(255, 255, 255, 0.4);
+    .container-for-lh {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 3.67% 0 4.1% 0;
+        img {
+            width: 100%;
+        }
+        h3 {
+            top: 20%;
+            position: absolute;
+            font-family: $font-gilroy;
+            font-size: calc($size * 1.8);
+            line-height: calc($size * 3);
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+        }
+        p {
+            width: 57.1%;
+            bottom: 20%;
+            position: absolute;
+            font-family: $font-gilroy;
+            font-size: calc($size * 0.85);
+            line-height: calc($size * 1.25);
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: rgba(255, 255, 255, 0.4);
+        }
     }
 }
 @media(max-width: 950px) {
-    .layer-header p {
+    .container-for-lh p {
         bottom: 10%;
     }
 }
 @media(max-width: 800px) {
     .layer-header {
-        h3 {
-            top: 10%;
-        }
-        p {
-            width: 100%;
+        margin-top: calc(3.67% + 75px);
+        .container-for-lh {
+            h3 {
+                top: 10%;
+            }
+            p {
+                width: 100%;
+            }
         }
     }
 }
 @media(max-width: 550px) {
     .layer-header {
-        h3 {
-            font-size: calc((1vh + 1vw) * 1.7);
-            line-height: calc((1vh + 1vw) * 2.5);
-        }
-        p {
-            font-size: calc((1vh + 1vw) * 0.75);
-            line-height: calc((1vh + 1vw) * 1.15);
+        .container-for-lh {
+            h3 {
+                font-size: calc((1vh + 1vw) * 1.5);
+                line-height: calc((1vh + 1vw) * 2.5);
+            }
+            p {
+                font-size: calc((1vh + 1vw) * 0.75);
+                line-height: calc((1vh + 1vw) * 1.15);
+                bottom: 5%;
+            }
         }
     }
 }

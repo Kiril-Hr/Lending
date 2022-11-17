@@ -3,6 +3,10 @@
 }
 
 .logo-Menu {
+  background-color: white;
+  z-index: 50;
+}
+.logo-Menu .container-logo-menu {
   padding: 2.95% 6.1% 0 6.1%;
   display: flex;
   justify-content: space-between;
@@ -12,21 +16,22 @@
   height: fit-content;
   overflow: hidden;
 }
-.logo-Menu a {
+.logo-Menu .container-logo-menu a {
   cursor: pointer;
   text-decoration: none;
 }
-.logo-Menu a img {
+.logo-Menu .container-logo-menu a img {
   height: 48px;
   width: 48px;
 }
-.logo-Menu .hbmenu {
+.logo-Menu .container-logo-menu .hbmenu {
   position: relative;
   height: 32px;
   width: 32px;
+  z-index: 20;
   cursor: pointer;
 }
-.logo-Menu .hbmenu::before, .logo-Menu .hbmenu::after {
+.logo-Menu .container-logo-menu .hbmenu::before, .logo-Menu .container-logo-menu .hbmenu::after {
   content: "";
   position: absolute;
   display: block;
@@ -36,13 +41,13 @@
   background-color: #356EAD;
   transition: all 0.3s ease 0.1s;
 }
-.logo-Menu .hbmenu::after {
+.logo-Menu .container-logo-menu .hbmenu::after {
   top: 8px;
 }
-.logo-Menu .hbmenu::before {
+.logo-Menu .container-logo-menu .hbmenu::before {
   bottom: 7px;
 }
-.logo-Menu .hbmenu span {
+.logo-Menu .container-logo-menu .hbmenu span {
   position: absolute;
   left: 4px;
   height: 3px;
@@ -50,6 +55,17 @@
   background-color: #356EAD;
   top: 15px;
   transition: all 0.3s ease 0.1s;
+}
+.logo-Menu .container-logo-menu .hbmenu.active::after {
+  transform: rotate(45deg);
+  top: 15px;
+}
+.logo-Menu .container-logo-menu .hbmenu.active::before {
+  transform: rotate(-45deg);
+  bottom: 14px;
+}
+.logo-Menu .container-logo-menu .hbmenu.active span {
+  transform: scale(0);
 }
 
 .submenu.active {
@@ -76,7 +92,7 @@
 .submenu ul li {
   text-align: center;
   cursor: pointer;
-  width: 200px;
+  width: 175px;
   height: 50px;
 }
 .submenu ul li div {
@@ -100,24 +116,46 @@
   color: #1F3F68;
 }
 
-.hbmenu.active::after {
-  transform: rotate(45deg);
-  top: 15px;
-}
-
-.hbmenu.active::before {
-  transform: rotate(-45deg);
-  bottom: 14px;
-}
-
-.hbmenu.active span {
-  transform: scale(0);
-}
-
 .active {
   display: block;
 }
 
+@media (max-width: 1100px) {
+  .submenu.active {
+    left: 20%;
+  }
+}
+@media (max-width: 800px) {
+  .logo-Menu {
+    top: 0;
+    width: 100%;
+    position: fixed;
+  }
+  .submenu {
+    left: unset;
+    top: -280px;
+    right: 0;
+    padding: 25px 0 0 25px;
+  }
+  .submenu ul {
+    flex-direction: column;
+  }
+  .submenu ul li {
+    margin-bottom: 30px;
+  }
+  .submenu ul li a {
+    letter-spacing: 0.15em;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .submenu.active {
+    left: unset;
+    top: 85%;
+    background-color: white;
+    z-index: 40;
+    border-bottom-left-radius: 15%;
+  }
+}
 .contact-us-block-and-contacts {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -382,10 +420,6 @@
   color: #316099;
 }
 
-.under-text {
-  margin: 28.24% 0 0 14.3%;
-}
-
 .block-what-we-do {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -399,25 +433,26 @@
   flex-direction: column;
 }
 .block-what-we-do div {
+  width: 100%;
   background-image: url(../image/blue-guy.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 132px;
-  margin: 0 76px 56px 26px;
+  margin: 0 0 56px 0;
 }
 .block-what-we-do h4 {
   font-family: "Gilroy";
-  font-size: 20px;
-  line-height: 30px;
+  font-size: calc((1vh + 1vw) * 0.9);
+  line-height: calc((1vh + 1vw) * 1.1);
   letter-spacing: 0.05em;
   color: #1F3F68;
 }
 .block-what-we-do p {
   margin-top: 16px;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.66);
+  line-height: calc((1vh + 1vw) * 1.1);
   letter-spacing: 0.05em;
   color: rgba(31, 63, 104, 0.6);
 }
@@ -480,6 +515,11 @@
   position: relative;
 }
 
+.under-text {
+  margin: 28.24% 0 0 14.3%;
+  width: 71%;
+}
+
 .goal {
   padding: 14.07% 15.6%;
   height: -webkit-fit-content;
@@ -494,15 +534,15 @@
 }
 .goal .text-about-finish-project h3 {
   font-family: "Gilroy";
-  font-size: 36px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 1.45);
+  line-height: calc((1vh + 1vw) * 1.7);
   letter-spacing: 0.05em;
   color: #1F3F68;
 }
 .goal .text-about-finish-project p {
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 26px;
+  font-size: calc((1vh + 1vw) * 0.66);
+  line-height: calc((1vh + 1vw) * 1.1);
   letter-spacing: 0.05em;
   color: rgba(31, 63, 104, 0.6);
   width: 63%;
@@ -517,22 +557,22 @@
 }
 .goal .smart-home-ill p {
   position: absolute;
-  right: 40px;
-  top: 102px;
+  right: 4.2%;
+  top: 24.3%;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 0.66);
+  line-height: calc((1vh + 1vw) * 2);
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.8);
 }
 .goal .smart-home-ill p:first-child {
   font-family: "Gilroy";
-  font-size: 28px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 1.2);
+  line-height: calc((1vh + 1vw) * 2);
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  margin-bottom: 8px;
-  top: 48px;
+  margin-bottom: 1%;
+  top: 11%;
 }
 .goal .smart-home-ill img {
   width: 100%;
@@ -555,20 +595,20 @@
 .goal .apps .spart-app p {
   position: absolute;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 0.66);
+  line-height: calc((1vh + 1vw) * 2);
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.8);
-  top: 74px;
-  margin-left: 32px;
+  top: 17.5%;
+  margin-left: 8%;
 }
 .goal .apps .spart-app p:first-child {
   font-family: "Gilroy";
-  font-size: 28px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 1.2);
+  line-height: calc((1vh + 1vw) * 2);
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  top: 24px;
+  top: 6%;
 }
 .goal .apps .car-app {
   position: relative;
@@ -580,20 +620,20 @@
 .goal .apps .car-app p {
   position: absolute;
   font-family: "Gilroy";
-  font-size: 16px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 0.66);
+  line-height: calc((1vh + 1vw) * 2);
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.8);
-  top: 74px;
-  margin-left: 32px;
+  top: 17.5%;
+  margin-left: 8%;
 }
 .goal .apps .car-app p:first-child {
   font-family: "Gilroy";
-  font-size: 28px;
-  line-height: 46px;
+  font-size: calc((1vh + 1vw) * 1.2);
+  line-height: calc((1vh + 1vw) * 2);
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  top: 24px;
+  top: 6%;
 }
 
 .footer {
@@ -687,6 +727,9 @@
   }
 }
 @media (max-width: 1290px) {
+  .under-text {
+    width: 80.9%;
+  }
   .goal .apps {
     display: flex;
     justify-content: space-around;
@@ -718,7 +761,15 @@
     margin: 50px 0 100px 0;
   }
 }
+@media (max-width: 800px) {
+  .box-header-text .text-new-option {
+    margin: calc(7.35% + 75px) 0 0 15.4%;
+  }
+}
 @media (max-width: 610px) {
+  .box-header-text .illustration {
+    margin-top: 25%;
+  }
   .text-about-finish-project {
     flex-direction: column;
   }
@@ -740,5 +791,20 @@
   .block-what-we-do div {
     height: calc((1vh + 1vw) * 6.7);
     width: calc((1vh + 1vw) * 10.6);
+  }
+}
+@media (max-width: 540px) {
+  .goal .apps .spart-app p:first-child {
+    font-size: calc((1vh + 1vw) * 0.9);
+  }
+  .goal .apps .car-app p:first-child {
+    font-size: calc((1vh + 1vw) * 0.9);
+  }
+  .block-what-we-do div {
+    margin: 0 0 56px 0;
+    height: calc((1vh + 1vw) * 8.2);
+  }
+  .text-beloved-client h3 {
+    margin-left: 8%;
   }
 }/*# sourceMappingURL=style.css.map */

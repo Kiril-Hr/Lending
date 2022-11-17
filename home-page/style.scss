@@ -84,9 +84,6 @@
         }
     }
 }
-.under-text {
-    margin: 28.24% 0 0 14.3%;
-}
 .block-what-we-do {
     height: fit-content;
     width: 80.9%;
@@ -97,25 +94,26 @@
     display: flex;
     flex-direction: column;
     div {
+        width: 100%;
         background-image: url(../image/blue-guy.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         height: 132px;
-        margin: 0 76px 56px 26px;
+        margin: 0 0 56px 0;
     }
     h4 {
         font-family: $font-gilroy;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: calc($size * 0.9);
+        line-height: calc($size * 1.1);
         letter-spacing: 0.05em;
         color: #1F3F68;
     }
     p {
         margin-top: 16px;
         font-family: $font-gilroy;
-        font-size: 16px;
-        line-height: 26px;
+        font-size: calc($size * 0.66);
+        line-height: calc($size * 1.1);
         letter-spacing: 0.05em;
         color: rgb(31, 63, 104, 0.6);
     }
@@ -182,6 +180,10 @@
     }
     
 }
+.under-text {
+    margin: 28.24% 0 0 14.3%;
+    width: 71%
+}
 .goal {
     padding: 14.07% 15.6%;
     height: fit-content;
@@ -190,15 +192,15 @@
         display: flex;
         h3 {
             font-family: $font-gilroy;
-            font-size: 36px;
-            line-height: 46px;
+            font-size: calc($size * 1.45);
+            line-height: calc($size * 1.7);
             letter-spacing: 0.05em;
             color: #1F3F68;
         }
         p {
             font-family: $font-gilroy;
-            font-size: 16px;
-            line-height: 26px;
+            font-size: calc($size * 0.66);
+            line-height: calc($size * 1.1);
             letter-spacing: 0.05em;
             color: rgb(31, 63, 104, 0.6);
             width: 63%;
@@ -211,21 +213,21 @@
         margin-top: 10.2%;
         p {
             position: absolute;
-            right: 40px;
-            top: 102px;
+            right: 4.2%;
+            top: 24.3%;
             font-family: $font-gilroy;
-            font-size: 16px;
-            line-height: 46px;
+            font-size: calc($size * 0.66);
+            line-height: calc($size * 2);
             letter-spacing: 0.05em;
             color: rgb(255, 255, 255, 0.8);
             &:first-child {
                 font-family: $font-gilroy;
-                font-size: 28px;
-                line-height: 46px;
+                font-size: calc($size * 1.2);
+                line-height: calc($size * 2);
                 letter-spacing: 0.05em;
                 color: #FFFFFF;
-                margin-bottom: 8px;
-                top: 48px;
+                margin-bottom: 1%;
+                top: 11%;
             }
         }
         img {
@@ -246,19 +248,19 @@
             p {
                 position: absolute;
                 font-family: $font-gilroy;
-                font-size: 16px;
-                line-height: 46px;
+                font-size: calc($size * 0.66);
+                line-height: calc($size * 2);
                 letter-spacing: 0.05em;
                 color: rgb(255, 255, 255, 0.8);
-                top: 74px;
-                margin-left: 32px;
+                top: 17.5%;
+                margin-left: 8%;
                 &:first-child {
                     font-family: $font-gilroy;
-                    font-size: 28px;
-                    line-height: 46px;
+                    font-size: calc($size * 1.2);
+                    line-height: calc($size * 2);
                     letter-spacing: 0.05em;
                     color: #FFFFFF;
-                    top: 24px;
+                    top: 6%;
                 }
             }
         }
@@ -271,19 +273,19 @@
             p {
                 position: absolute;
                 font-family: $font-gilroy;
-                font-size: 16px;
-                line-height: 46px;
+                font-size: calc($size * 0.66);
+                line-height: calc($size * 2);
                 letter-spacing: 0.05em;
                 color: rgb(255, 255, 255, 0.8);
-                top: 74px;
-                margin-left: 32px;
+                top: 17.5%;
+                margin-left: 8%;
                 &:first-child {
                     font-family: $font-gilroy;
-                    font-size: 28px;
-                    line-height: 46px;
+                    font-size: calc($size * 1.2);
+                    line-height: calc($size * 2);
                     letter-spacing: 0.05em;
                     color: #FFFFFF;
-                    top: 24px;
+                    top: 6%;
                 }
             }
         }
@@ -367,6 +369,9 @@
     }
 }
 @media(max-width: 1290px) {
+    .under-text {
+        width: 80.9%;
+    }
     .goal {
         .apps {
             @include flex(space-around, center);
@@ -401,7 +406,17 @@
         margin: 50px 0 100px 0;
     }
 }
+@media(max-width: 800px) {
+    .box-header-text {
+        .text-new-option {
+            margin: calc(7.35% + 75px) 0 0 15.4%;
+        }
+    }
+}
 @media(max-width: 610px) {
+    .box-header-text .illustration {
+        margin-top: 25%;
+    }
     .text-about-finish-project {
         flex-direction: column;
         p {
@@ -424,6 +439,37 @@
         div {
             height: calc($size * 6.7);
             width: calc($size * 10.6);
+        }
+    }
+}
+@media(max-width: 540px) {
+    .goal {
+        .apps {
+            .spart-app {
+                p {
+                    &:first-child {
+                        font-size: calc((1vh + 1vw) * 0.9);
+                    }
+                }
+            }
+            .car-app {
+                p {
+                    &:first-child {
+                        font-size: calc((1vh + 1vw) * 0.9);
+                    }
+                }
+            }
+        }
+    }
+    .block-what-we-do {
+        div {
+            margin: 0 0 56px 0;
+            height: calc($size * 8.2);
+        }
+    }
+    .text-beloved-client {
+        h3 {
+            margin-left: 8%;
         }
     }
 }

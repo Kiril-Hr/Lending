@@ -3,6 +3,10 @@
 }
 
 .logo-Menu {
+  background-color: white;
+  z-index: 50;
+}
+.logo-Menu .container-logo-menu {
   padding: 2.95% 6.1% 0 6.1%;
   display: flex;
   justify-content: space-between;
@@ -12,21 +16,22 @@
   height: fit-content;
   overflow: hidden;
 }
-.logo-Menu a {
+.logo-Menu .container-logo-menu a {
   cursor: pointer;
   text-decoration: none;
 }
-.logo-Menu a img {
+.logo-Menu .container-logo-menu a img {
   height: 48px;
   width: 48px;
 }
-.logo-Menu .hbmenu {
+.logo-Menu .container-logo-menu .hbmenu {
   position: relative;
   height: 32px;
   width: 32px;
+  z-index: 20;
   cursor: pointer;
 }
-.logo-Menu .hbmenu::before, .logo-Menu .hbmenu::after {
+.logo-Menu .container-logo-menu .hbmenu::before, .logo-Menu .container-logo-menu .hbmenu::after {
   content: "";
   position: absolute;
   display: block;
@@ -36,13 +41,13 @@
   background-color: #356EAD;
   transition: all 0.3s ease 0.1s;
 }
-.logo-Menu .hbmenu::after {
+.logo-Menu .container-logo-menu .hbmenu::after {
   top: 8px;
 }
-.logo-Menu .hbmenu::before {
+.logo-Menu .container-logo-menu .hbmenu::before {
   bottom: 7px;
 }
-.logo-Menu .hbmenu span {
+.logo-Menu .container-logo-menu .hbmenu span {
   position: absolute;
   left: 4px;
   height: 3px;
@@ -50,6 +55,17 @@
   background-color: #356EAD;
   top: 15px;
   transition: all 0.3s ease 0.1s;
+}
+.logo-Menu .container-logo-menu .hbmenu.active::after {
+  transform: rotate(45deg);
+  top: 15px;
+}
+.logo-Menu .container-logo-menu .hbmenu.active::before {
+  transform: rotate(-45deg);
+  bottom: 14px;
+}
+.logo-Menu .container-logo-menu .hbmenu.active span {
+  transform: scale(0);
 }
 
 .submenu.active {
@@ -76,7 +92,7 @@
 .submenu ul li {
   text-align: center;
   cursor: pointer;
-  width: 200px;
+  width: 175px;
   height: 50px;
 }
 .submenu ul li div {
@@ -100,34 +116,56 @@
   color: #1F3F68;
 }
 
-.hbmenu.active::after {
-  transform: rotate(45deg);
-  top: 15px;
-}
-
-.hbmenu.active::before {
-  transform: rotate(-45deg);
-  bottom: 14px;
-}
-
-.hbmenu.active span {
-  transform: scale(0);
-}
-
 .active {
   display: block;
 }
 
-.layer-header {
+@media (max-width: 1100px) {
+  .submenu.active {
+    left: 20%;
+  }
+}
+@media (max-width: 800px) {
+  .logo-Menu {
+    top: 0;
+    width: 100%;
+    position: fixed;
+  }
+  .submenu {
+    left: unset;
+    top: -280px;
+    right: 0;
+    padding: 25px 0 0 25px;
+  }
+  .submenu ul {
+    flex-direction: column;
+  }
+  .submenu ul li {
+    margin-bottom: 30px;
+  }
+  .submenu ul li a {
+    letter-spacing: 0.15em;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .submenu.active {
+    left: unset;
+    top: 85%;
+    background-color: white;
+    z-index: 40;
+    border-bottom-left-radius: 15%;
+  }
+}
+.layer-header .container-for-lh {
   display: flex;
   justify-content: center;
   position: relative;
   margin: 3.67% 0 4.1% 0;
 }
-.layer-header img {
+.layer-header .container-for-lh img {
   width: 100%;
 }
-.layer-header h3 {
+.layer-header .container-for-lh h3 {
   top: 20%;
   position: absolute;
   font-family: "Gilroy";
@@ -137,7 +175,7 @@
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-.layer-header p {
+.layer-header .container-for-lh p {
   width: 57.1%;
   bottom: 20%;
   position: absolute;
@@ -150,26 +188,30 @@
 }
 
 @media (max-width: 950px) {
-  .layer-header p {
+  .container-for-lh p {
     bottom: 10%;
   }
 }
 @media (max-width: 800px) {
-  .layer-header h3 {
+  .layer-header {
+    margin-top: calc(3.67% + 75px);
+  }
+  .layer-header .container-for-lh h3 {
     top: 10%;
   }
-  .layer-header p {
+  .layer-header .container-for-lh p {
     width: 100%;
   }
 }
 @media (max-width: 550px) {
-  .layer-header h3 {
-    font-size: calc((1vh + 1vw) * 1.7);
+  .layer-header .container-for-lh h3 {
+    font-size: calc((1vh + 1vw) * 1.5);
     line-height: calc((1vh + 1vw) * 2.5);
   }
-  .layer-header p {
+  .layer-header .container-for-lh p {
     font-size: calc((1vh + 1vw) * 0.75);
     line-height: calc((1vh + 1vw) * 1.15);
+    bottom: 5%;
   }
 }
 .contact-us-block-and-contacts {

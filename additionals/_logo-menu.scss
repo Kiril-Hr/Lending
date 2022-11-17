@@ -3,55 +3,72 @@
 }
 
 .logo-Menu {
-    padding: 2.95% 6.1% 0 6.1%;
-    @include flex(space-between, center);
-    height: fit-content;
-    overflow: hidden;
-
-    a {
-        cursor: pointer;
-        text-decoration: none;
-
-        img {
-            height: 48px;
-            width: 48px;
+    background-color: white;
+    z-index: 50;
+    .container-logo-menu {
+        padding: 2.95% 6.1% 0 6.1%;
+        @include flex(space-between, center);
+        height: fit-content;
+        overflow: hidden;
+        a {
+            cursor: pointer;
+            text-decoration: none;
+    
+            img {
+                height: 48px;
+                width: 48px;
+            }
         }
-    }
-
-    .hbmenu {
-        position: relative;
-        height: 32px;
-        width: 32px;
-        cursor: pointer;
-
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            left: 4px;
-            height: 3px;
-            width: 24px;
-            background-color: #356EAD;
-            transition: all 0.3s ease 0.1s;
+    
+        .hbmenu {
+            position: relative;
+            height: 32px;
+            width: 32px;
+            z-index: 20;
+            cursor: pointer;
+    
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                left: 4px;
+                height: 3px;
+                width: 24px;
+                background-color: #356EAD;
+                transition: all 0.3s ease 0.1s;
+            }
+    
+            &::after {
+                top: 8px;
+            }
+    
+            &::before {
+                bottom: 7px;
+            }
+    
+            span {
+                position: absolute;
+                left: 4px;
+                height: 3px;
+                width: 24px;
+                background-color: #356EAD;
+                top: 15px;
+                transition: all 0.3s ease 0.1s;
+            }
         }
-
-        &::after {
-            top: 8px;
-        }
-
-        &::before {
-            bottom: 7px;
-        }
-
-        span {
-            position: absolute;
-            left: 4px;
-            height: 3px;
-            width: 24px;
-            background-color: #356EAD;
+        .hbmenu.active::after {
+            transform: rotate(45deg);
             top: 15px;
-            transition: all 0.3s ease 0.1s;
+        }
+        
+        .hbmenu.active::before {
+            transform: rotate(-45deg);
+            bottom: 14px;
+        }
+        
+        .hbmenu.active span {
+            transform: scale(0);
         }
     }
 }
@@ -76,7 +93,7 @@
         li {
             text-align: center;
             cursor: pointer;
-            width: 200px;
+            width: 175px;
             height: 50px;
 
             div {
@@ -104,21 +121,42 @@
         }
     }
 }
-
-.hbmenu.active::after {
-    transform: rotate(45deg);
-    top: 15px;
-}
-
-.hbmenu.active::before {
-    transform: rotate(-45deg);
-    bottom: 14px;
-}
-
-.hbmenu.active span {
-    transform: scale(0);
-}
-
 .active {
     display: block;
+}
+@media(max-width: 1100px) {
+    .submenu.active {
+        left: 20%;
+    }
+}
+@media(max-width: 800px) {
+    .logo-Menu {
+        top: 0;
+        width: 100%;
+        position: fixed;
+    }
+    .submenu {
+        left: unset;
+        top: -280px;
+        right: 0;
+        padding: 25px 0 0 25px;
+        ul {
+            flex-direction: column;
+            li {
+                margin-bottom: 30px;
+                a {
+                    letter-spacing: 0.15em;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .submenu.active {
+        left: unset;
+        top: 85%;
+        background-color: white;
+        z-index: 40;
+        border-bottom-left-radius: 15%;
+    }
 }
