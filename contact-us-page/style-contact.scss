@@ -224,6 +224,13 @@
             }
         }
     }
-    
-    
+}
+@media(max-width: 550px) {
+    .layer-header {
+        .container-for-lh {
+            p {
+                bottom: 20%;
+            }
+        }
+    }
 }

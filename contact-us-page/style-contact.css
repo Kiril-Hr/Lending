@@ -632,4 +632,9 @@
   .cont-form form textarea {
     width: 100% !important;
   }
+}
+@media (max-width: 550px) {
+  .layer-header .container-for-lh p {
+    bottom: 20%;
+  }
 }/*# sourceMappingURL=style-contact.css.map */

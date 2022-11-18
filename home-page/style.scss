@@ -394,9 +394,6 @@
             }
         }
     }
-
-}
-@media(max-width: 1290px) {
     .what-we-do {
         flex-direction: column;
         .text-what-we-do-1-col {
@@ -418,6 +415,32 @@
             margin: calc(7.35% + 75px) 0 0 15.4%;
         }
     }
+}
+@media(max-width: 690px) {
+    .footer {
+        .beloved-client {
+            .client-blocks {
+                [class*=logo-client]:nth-child(3) {
+                    border-right: 0;
+                }
+                [class*=logo-client]:nth-child(4) {
+                    border-right: 1px solid #FFFFFF;
+                }
+                [class*=logo-client]:nth-child(5) {
+                    border-right: 1px solid #FFFFFF;
+                    border-bottom: 1px solid #FFFFFF;
+                }
+                [class*=logo-client]:nth-child(6) {
+                    border-right: 0;
+                    border-bottom: 1px solid #FFFFFF;
+                }
+                .more-clients {
+                    border-right: 1px solid #FFFFFF;
+                }
+            }
+        }
+    }
+    
 }
 @media(max-width: 610px) {
     .box-header-text .illustration {
